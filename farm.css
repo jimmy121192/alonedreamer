@@ -1,0 +1,95 @@
+html, body { margin:0; padding:0; overflow:hidden }
+svg { position:fixed; top:0; bottom:0; left:0; right:0 }
+
+#windmill {
+	box-shadow: none;
+  transform-origin: 2090px 915px;
+  -moz-animation: 10s rotateRight infinite linear ;
+  -webkit-animation: 10s rotateRight infinite linear ;
+
+}
+#pig1, #pig2, #pig3, #pig4, #pig5, #pig6, #pig7, #pig8, #pig9, #pig10, #pig11, #pig12, #pig13, #pig14, #pig15, #pig16, #pig17, #pig18{ display:none; cursor: pointer;} 
+#cock1, #cock2, #cock3, #cock4, #cock5, #cock6, #cock7, #cock8, #cock9, #cock10, #cock11, #cock12, #cock13, #cock14, #cock15, #cock16, #cock17, #cock18,#cock19, #cock20, #cock21{ display:none;cursor: pointer; } 
+
+@-moz-keyframes rotateRight {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotateRight {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+#pigsign, #cocksign, #reset,#check, #quit, #yes, #no, #farmer, #scarecrow_1_, #boar{
+	cursor: pointer;
+}
+#chat2,#chat3,#chat4, #crowchat{
+  display:none;
+}
+
+#boar{
+  transition: 5s;
+}
+
+
+@keyframes fly{
+0%{
+	transform: translate(-500px, 20%);
+}
+50%{
+	transform: translate(500px, -10%);
+}
+100%{
+	transform: translate(-500px, 20%);
+}
+}
+
+
+
+/************** Tutorial Part ***************/
+
+#control {
+    position:fixed;
+    left:-420px;
+    top:30px;
+    width: 500px;
+    height: 315px;
+
+    transition:1s;
+    z-index: 100;
+}
+
+#video {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+#open {
+  cursor: pointer;
+  background-image: url("img/tutorial.png");
+  background-size: cover;
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    width: 80px;
+    height: 80px;
+    animation: pulse 1.5s infinite;
+
+}
+
+@keyframes pulse{
+    0% {width: 60px; height: 60px}
+    50% {width: 75px; height: 75px}
+    100% {width: 60px; height: 60px}
+}
+/**************  Tutorial Part  ***************/
+

@@ -1,0 +1,259 @@
+#mountain, #airbaloon, #level3, #field, #windmill, #circus, #level7, #level8, #tent, #purple, #level10, #level12, #church, #back{
+	cursor: pointer;
+} 
+#ghost{
+	display: none;
+}
+#cloud1, #cloud{
+	animation: progression 40s infinite;
+}
+#airbaloon{
+	animation: drift 7s ease-in-out infinite;
+}
+
+
+#bat1, #bat2, #bat3, #bat4{
+	animation: float2 5s ease-in-out infinite;
+}
+
+#bat5, #bat6, #bat7{
+  animation: float3 5s ease-in-out infinite;
+}
+
+@keyframes float1 {
+  0% {
+    transform: translateY(2%);
+  }
+  50% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(2%);
+  }
+}
+@keyframes float2 {
+  0% {
+    transform: translateY(1%);
+  }
+  50% {
+    transform: translateY(-1%);
+  }
+  100% {
+    transform: translateY(1%);
+  }
+}
+@keyframes float3 {
+  0% {
+    transform: translate(20px, -20px);
+  }
+   25% {
+    transform: translate(60px,-70px);
+  }
+  50% {
+    transform: translate(80px,-40px);
+  }
+   75% {
+    transform: translate(80px,-120px);
+  }
+  100% {
+    transform: translate(20px, -20px);
+  }
+}
+@keyframes drift {
+  0% {
+    -webkit-transform: translateY(0px) rotate();
+            transform: translateY(0px) rotate();
+  }
+  50% {
+    -webkit-transform: translateY(-20px) rotate(-3deg);
+            transform: translateY(-20px) rotate(-3deg);
+  }
+  100% {
+    -webkit-transform: translateY(0px) rotate();
+            transform: translateY(0px) rotate();
+  }
+}
+@-webkit-keyframes progression {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(3000px);
+  }
+}
+
+@keyframes progression {
+ from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(3000px);
+  }
+}
+
+
+#wheel {
+  transform-origin: 340px 1475px;
+  -moz-animation: 3s rotateRight infinite linear;
+  -webkit-animation: 3s rotateRight infinite linear;
+}
+
+@-moz-keyframes rotateRight {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotateRight {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+
+.sun { 
+  position: absolute;
+	top:60px;
+	left:0;
+	right:0;
+
+	  margin: auto;
+	width:70px;
+	height:70px;
+	border-radius:50%;	
+	background:white;
+	opacity:0.9;			
+	box-shadow: 0px 0px 40px 15px orange;  
+	z-index: 300;
+	
+}
+
+.ray_box {
+  position: absolute;
+  margin: auto;
+	top:0px;
+	left:0;
+	right:0;
+	bottom:0;	
+  width:70px;  
+  -webkit-animation: ray_anim 120s linear infinite;
+  animation: ray_anim 120s linear infinite;
+}
+.ray {  
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(247,202,119,1) 50%, rgba(255,255,255,0) 100%);
+		background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(247,202,119,1) 50%, rgba(255,255,255,0) 100%); 
+    margin-left:10px;
+    border-radius:80% 80% 0 0;
+    position:absolute;
+    opacity:0.1;
+}
+
+.ray1 {    
+    height:170px;
+    width:30px;
+   -webkit-transform: rotate(180deg);
+    top:-175px;
+    left: 15px;
+}
+.ray2 {
+    height:100px;
+    width:8px;
+   -webkit-transform: rotate(220deg);
+    top:-90px;
+    left: 75px;
+}
+.ray3 {
+    height:170px;
+    width:50px;
+   -webkit-transform: rotate(250deg);
+    top:-80px;
+    left: 100px;
+}
+.ray4 {
+    height:120px;
+    width:14px;
+   -webkit-transform: rotate(305deg);
+    top:30px;
+    left: 100px;
+}
+.ray5 {
+    height:140px;
+    width:30px;
+   -webkit-transform: rotate(-15deg);
+    top:60px;
+    left: 40px;
+}
+.ray6 {
+    height:90px;
+    width:50px;
+   -webkit-transform: rotate(30deg);
+    top:60px;
+    left: -40px;
+}
+.ray7 {
+    height:180px;
+    width:10px;
+   -webkit-transform: rotate(70deg);
+    top:-35px;
+    left: -40px;
+}
+.ray8 {
+    height:120px;
+    width:30px;
+   -webkit-transform: rotate(100deg);
+    top:-45px;
+    left:-90px;
+}
+.ray9 {
+    height:80px;
+    width:10px;
+   -webkit-transform: rotate(120deg);
+    top:-65px;
+    left:-60px;
+}
+.ray10 {
+    height:190px;
+    width:23px;
+   -webkit-transform: rotate(150deg);
+    top:-185px;
+    left: -60px;
+}
+
+
+@-webkit-keyframes ray_anim { 
+		0% { -webkit-transform: rotate(0deg); transform: rotate(0deg);}    
+    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+}
+
+@-webkit-keyframes water {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(200px);
+  }
+}
+
+@keyframes water {
+ from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(200px);
+  }
+}
+#water1, #water5 {
+	animation: water 1s infinite;
+}
+#water2, #water3{
+	animation: water 1.5s infinite;
+}
+#water4 {
+	animation: water 0.7s infinite;
+}

@@ -1,0 +1,139 @@
+html, body { margin:0; padding:0; overflow:hidden }
+svg { position:fixed; top:0; bottom:0; left:0; right:0 };
+
+
+
+#levelselect, #dropdown{
+	display: none;
+	transition: 0.5s;
+}
+
+
+#level, #menu, #back, #map, #home, #lv2, #lv5, #lv6, #lv7, #close, #music {
+	cursor: pointer;
+}
+
+#wave1, #wave5, #wave6 {
+	opacity: 0;
+	animation: wave1 1s infinite;
+}
+#wave2 {
+	opacity: 0;
+	animation: wave2 0.7s infinite;	
+}
+#wave3 {
+	opacity: 0;
+	animation: wave3 1.3s infinite;	
+}
+#wave4 {
+	opacity: 0;
+	animation: wave4 1s infinite;	
+}
+
+@keyframes wave1{
+	 0% {
+    opacity:0;
+  }
+  25% {
+    opacity:0.25;
+  }
+  50% {
+    opacity:0.5;
+  }
+   75% {
+    opacity:0.75;
+  }
+  100% {
+    opacity:1;
+  }
+
+}
+@keyframes wave2{
+	 0% {
+    opacity:0;
+  }
+  25% {
+    opacity:0.2;
+  }
+  50% {
+    opacity:0.4;
+  }
+   75% {
+    opacity:0.8;
+  }
+  100% {
+    opacity:1;
+  }
+
+}
+@keyframes wave3{
+	 0% {
+    opacity:0;
+  }
+  25% {
+    opacity:0.3;
+  }
+  50% {
+    opacity:0.5;
+  }
+   75% {
+    opacity:0.7;
+  }
+  100% {
+    opacity:1;
+  }
+
+}
+@keyframes wave4{
+	 0% {
+    opacity:0;
+  }
+  25% {
+    opacity:0.4;
+  }
+  50% {
+    opacity:0.5;
+  }
+   75% {
+    opacity:0.8;
+  }
+  100% {
+    opacity:1;
+  }
+
+}
+
+#wheel {
+  transform-origin: 132px 267px;
+  -moz-animation: 3s rotateRight infinite linear;
+  -webkit-animation: 3s rotateRight infinite linear;
+}
+
+@-moz-keyframes rotateRight {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotateRight {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,387 @@
+  body {
+
+
+overflow: hidden;
+  }
+
+
+
+#bg{
+            width            : 100%;
+            height           : 100vh;
+            top              : 0;
+            right            : 0;
+            bottom           : 0;
+            left             : 0;
+            margin           : auto;
+            background-repeat: no-repeat;
+            background-size  : cover;
+            
+          
+            position        : absolute;
+            background-image: url(./img/background.jpg);
+          
+            background-position: center bottom;
+          
+              animation: wind 90s linear infinite;
+          }
+          @keyframes wind{
+            from { background-position: 0 0; }
+            to { background-position: 100% 0; }
+          
+          }
+
+
+  #airbaloon{
+    display: none;
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    z-index: 3;
+    top:300px;
+    left: 50px;
+    transform: translateY(-15%);
+    transition: 1s;
+  animation: drift 5s ease-in-out infinite;
+/*  animation: drop 5s ease-in-out infinite;
+ /* animation: float 6s ease-in-out ;*/*/
+  /*transition: 0.5s;*/
+  }
+
+
+
+
+
+@-webkit-keyframes drift {
+  0% {  
+    -webkit-transform: translateY(0px) rotate();
+            transform: translateY(0px) rotate();
+  }
+  50% {
+    -webkit-transform: translateY(-20px) rotate(-3deg);
+            transform: translateY(-20px) rotate(-3deg);
+  }
+  100% {
+    -webkit-transform: translateY(0px) rotate();
+            transform: translateY(0px) rotate();
+  }
+}
+@keyframes drift {
+  0% {
+    -webkit-transform: translateY(0px) rotate();
+            transform: translateY(0px) rotate();
+  }
+  50% {
+    -webkit-transform: translateY(-20px) rotate(-3deg);
+            transform: translateY(-20px) rotate(-3deg);
+  }
+  100% {
+    -webkit-transform: translateY(0px) rotate();
+            transform: translateY(0px) rotate();
+  }
+}
+
+#spaceship{
+  display: none;;
+  position: absolute;
+  z-index: 10;
+  top: 400px;
+  right: 50px;
+  width: 300px;
+  height: 100px;
+  cursor: pointer;
+  animation: float 7s ease-in-out infinite;
+}
+
+
+#birds{
+  width: 1400px;
+  height: 100px;
+ 
+  position: absolute;
+  z-index: 9;
+  top: 300px;
+  right: 0px;
+
+
+}
+#ybirds{
+  width: 1400px;
+  height: 200px;
+  
+  position: absolute;
+  z-index: 9;
+  top: 100px;
+  right: 0px;
+}
+#gbirds{
+  width: 1400px;
+  height: 200px;
+  
+  position: absolute;
+  z-index: 9;
+  bottom: 200px;
+  right: 0px;
+}
+
+.redbirds{
+  width: 80px;
+  height: 60px;
+  z-index: 100;
+
+animation: fly 7s ease-in-out;
+  cursor: pointer;
+ display: block;
+transition: 1s;
+  opacity: 1;
+  position: absolute;
+ /*transform:  translateY(300px);*/
+}
+
+.yellowbirds{
+  width: 80px;
+  height: 60px;
+  z-index: 100;
+
+animation: fly 7s ease-in-out;
+  cursor: pointer;
+ display: block;
+transition: 1s;
+  opacity: 1;
+  position: absolute;
+ transform:  translateY(300px);
+}
+
+.greenbirds{
+  width: 80px;
+  height: 60px;
+  z-index: 100;
+
+animation: fly 7s ease-in-out;
+  cursor: pointer;
+ display: block;
+transition: 1s;
+  opacity: 1;
+  position: absolute;
+ transform:  translateY(-300px);
+}
+
+@keyframes fly {
+  0% { transform: translateX(1300px) rotate(-3deg)};
+  10% { transform: translateX(900px) rotate()};
+  20% { transform: translateX(800px) rotate(-3deg)};
+  30% { transform: translateX(700px) rotate()};
+  40% { transform: translateX(600px) rotate(-3deg)};
+  100% { transform: translateX(500px) rotate()};
+/*  60% { transform: translateX(400px) rotate(-3deg)};
+  70% { transform: translateX(300px) rotate()};
+  80% { transform: translateX(200px) rotate(-3deg)};
+  90% { transform: translateX(100px) rotate()};
+  100% { transform: translateX(0px) rotate(180deg)};*/
+
+}
+@keyframes float {
+  0% {
+    transform: translateY(40%);
+  }
+  50% {
+    transform: translateY(-40%);
+  }
+  100% {
+    transform: translateY(40%);
+  }
+}
+#lives{
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 100px;
+  font-size: 50px;
+  color: red;
+  z-index: 10;
+ 
+}
+#score{
+  display: none;
+  position: absolute;
+  width: 120px;
+  height: 50px;
+  top: 100px;
+  left: 100px;
+  font-size: 32px;
+  color: #FD006A;
+  z-index: 12;
+
+}
+
+#progress-bar {
+ display: none;
+  margin: auto;
+  width: 1055px;
+  height: 70px;
+  left: 0px;
+  right:0px;
+  bottom: 20px;
+  position: absolute;
+  z-index: 20;
+  background-image: url("./img/meter.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+#icon{
+  display: block;
+  width: 33px;
+  height: 60px;
+
+
+    -webkit-animation: progression 60s ;
+}
+
+@-webkit-keyframes progression {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(1000px);
+  }
+}
+
+@keyframes progression {
+ from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(1000px);
+  }
+}
+
+
+#title{
+  width: 900px;
+  height: 70px;
+  left: 0px;
+  right:0px;
+  top: 50px;
+  margin: auto;
+  background-image: url(img/game2title.png);
+  background-size: cover;
+  position: absolute;
+  z-index: 12;
+}
+#img1{
+  width: 400px;
+  height: 240px;
+    left: 0px;
+  right:0px;
+  top: 300px;
+  margin: auto;
+    position: absolute;
+  z-index: 12;
+  animation: float 7s ease-in-out infinite;
+
+}
+
+
+
+#start{
+  cursor: pointer;
+  width: 300px;
+  height: 70px;
+  left: 0px;
+  right:0px;
+  bottom: 210px;
+  margin: auto;
+  background-image: url(img/startbutton.png);
+  background-size: cover;
+  position: absolute;
+  z-index: 12;
+  transition: 0.5s;
+}
+#exit{
+  cursor: pointer;
+  width: 300px;
+  height: 70px;
+  left: 0px;
+  right:0px;
+  bottom: 120px;
+  margin: auto;
+  background-image: url(img/exitbutton.png);
+  background-size: cover;
+  position: absolute;
+  z-index: 12;
+  transition: 0.5s;
+}
+
+.images{
+  width: 200px;
+  height: 250px;
+ 
+
+}
+#countdown{
+  width: 300px;
+  height: 550px;
+  position: absolute;
+  z-index: 9;
+  top: 300px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+#board{
+  display: none;
+  background-image:;
+  background-size: cover;
+  width: 400px;
+  height: 285px;
+  position: absolute;
+  z-index:10;
+  top: 400px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  cursor: pointer;
+}
+
+
+
+/************** Tutorial Part ***************/
+
+#control {
+    position:fixed;
+    left:-420px;
+    top:30px;
+    width: 500px;
+    height: 315px;
+
+    transition:1s;
+    z-index: 100;
+}
+
+#video {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+#open {
+  cursor: pointer;
+  background-image: url("img/tutorial.png");
+  background-size: cover;
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    width: 80px;
+    height: 80px;
+    animation: pulse 1.5s infinite;
+
+}
+
+@keyframes pulse{
+    0% {width: 60px; height: 60px}
+    50% {width: 75px; height: 75px}
+    100% {width: 60px; height: 60px}
+}
+/**************  Tutorial Part  ***************/

@@ -1,0 +1,378 @@
+@font-face {
+  font-family: 'Korean';
+  src: url('./Noteworthy-Bold.ttf'); 
+  } 
+  body {
+    width: 100%;
+    margin-bottom: 0px;
+overflow: hidden;
+  }
+  #dreamers {
+    height: 344px;
+    width: 500px;
+    position: absolute;
+    top: 25px;
+    left: 35%;
+    background-image: url(./img/dream.png);
+    background-repeat: no-repeat; 
+    opacity: 0.9;
+    
+
+}
+   
+@media only screen and (max-width:2440px) and (min-width: 1000px){
+  #stepContent {
+    background       : url('./img/frames.png');
+    height           : 563px;
+    width            : 750px;
+    position         : absolute;
+    top              : 450px;
+    left             : 400px;
+    margin           : 0 auto;
+    -webkit-animation: sprite-animation 0.8s steps(4,end) infinite;
+    -moz-animation   : sprite-animation 0.8s steps(4,end) infinite;
+    -ms-animation    : sprite-animation 0.8s steps(4,end) infinite;
+    animation        : sprite-animation 0.8s steps(4,end) infinite;
+    }
+
+@-webkit-keyframes sprite-animation { 
+        from { background-position: 0 0; }
+        to { background-position: -3000px 0; } 
+    }
+
+@-ms-keyframes sprite-animation { 
+        from { background-position: 0 0; }
+        to { background-position: -3000px 0; }
+    }
+
+@-moz-keyframes sprite-animation { 
+        from { background-position: 0 0; }
+        to { background-position: -3000px 0; }
+    }
+
+@keyframes sprite-animation { 
+        from { background-position: 0 0; }
+        to { background-position: -3000px 0; }
+    }
+
+   #dreamers {
+    height: 344px;
+    width: 500px;
+    position: absolute;
+    top: 25px;
+    left: 35%;
+    background-image: url(./img/dream.png);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    opacity: 0.8;
+    
+
+}
+
+
+#menu {
+    width: 250px;height: 150px;
+      position: absolute;
+        top: 380px;
+        left: 0px;
+        right: 0px;
+ 
+        margin: auto;
+   
+}
+}
+
+@media only screen and (min-width: 2441px){
+  #stepContent {
+    background       : url('./img/frames.png');
+    height           : 563px;
+    width            : 750px;
+    position         : absolute;
+    top              : 770px;
+    left             : 820px;
+    margin           : 0 auto;
+    -webkit-animation: sprite-animation 0.8s steps(4,end) infinite;
+    -moz-animation   : sprite-animation 0.8s steps(4,end) infinite;
+    -ms-animation    : sprite-animation 0.8s steps(4,end) infinite;
+    animation        : sprite-animation 0.8s steps(4,end) infinite;
+    }
+
+@-webkit-keyframes sprite-animation { 
+        from { background-position: 0 0; }
+        to { background-position: -3000px 0; } 
+    }
+
+@-ms-keyframes sprite-animation { 
+        from { background-position: 0 0; }
+        to { background-position: -3000px 0; }
+    }
+
+@-moz-keyframes sprite-animation { 
+        from { background-position: 0 0; }
+        to { background-position: -3000px 0; }
+    }
+
+@keyframes sprite-animation { 
+        from { background-position: 0 0; }
+        to { background-position: -3000px 0; }
+    }
+
+   #dreamers {
+    height: 444px;
+    width: 630px;
+    position: absolute;
+    top: 100px;
+    left: 35%;
+    background-image: url(./img/dream.png);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    opacity: 0.9;
+    
+
+}
+    
+    #menu {
+    
+      position: absolute;
+        top: 500px;
+        left: 0px;
+        right: 0px;
+        
+        margin: auto;
+   
+}
+
+}
+
+
+
+        #bg{
+            width            : 100%;
+            height           : 100vh;
+            top              : 0;
+            right            : 0;
+            bottom           : 0;
+            left             : 0;
+            margin           : auto;
+            background-repeat: no-repeat;
+            background-size  : cover;
+            
+          
+            position        : absolute;
+            background-image: url(./img/landingpage.jpg);
+          
+            background-position: center bottom;
+          
+              animation: wind 120s linear infinite;
+          }
+          @keyframes wind{
+            from { background-position: 0 0; }
+            to { background-position: 100% 0; }
+          
+          }
+
+
+          .music-wrap {
+            right   : 40%;
+            position: absolute;
+            bottom  : 480px;
+            
+        }
+        .note-position-1 {
+          bottom: 0;
+        }
+        .note-position-2 {
+          bottom: 0;
+          left  : 20px;
+        }
+        .note-position-3 {
+          bottom: 0;
+          left  : 25px;
+        }
+        .note-position-4 {
+          bottom: 0;
+          left  : 35px;
+        }
+        .animation-delay-1 {
+          animation-delay: .75s;
+        }
+        .animation-delay-2 {
+          animation-delay: 1.75s;
+        }
+        .animation-delay-3 {
+            animation-delay: 2.5s;
+        }
+        .note-amination {
+          position                 : absolute;
+          font-size                : 12px;
+          animation-name           : notes;
+          animation-duration       : 3s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+          opacity                  : 0;
+          color                    : #000;
+        }
+        @keyframes notes {
+          0% {
+            font-size: 12px;
+            opacity  : 0;
+          }
+          50% {
+            opacity: 1;
+          }
+          100% {
+            font-size: 24px;
+            bottom   : 60px;
+            opacity  : 0;
+          }
+        }
+        .swing-animation {
+          animation-name           : swing;
+          animation-duration       : 1s;
+          animation-iteration-count: infinite;
+          animation-timing-function: linear;
+      
+          
+        }
+        @keyframes swing {
+            0% {
+                transform: rotateZ(0deg);
+            }
+            25% {
+                transform: rotateZ(20deg);
+            }
+            75% {
+                transform: rotateZ(-20deg);
+            }
+            100% {
+                transform: rotateZ(0deg);
+            }
+        }
+
+
+
+        #sound {
+          display: block;
+          position: absolute;
+          top: 25px;
+          right: 10px;
+          width: 80px;
+          height: 80px;
+          background-image: url("./img/music.png");
+          background-repeat: no-repeat;;
+          background-size: cover;
+          cursor: pointer;
+          opacity: 0.8;
+          transition: 0.5s;
+        }
+        
+        #sound:hover {
+          width: 100px;
+          height: 100px;
+          opacity: 1;
+        }
+
+
+
+
+#start {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        }
+    
+       #start a:link, a:visited {
+   
+ 
+          color: blue;
+          text-align: center; 
+          text-decoration: none;
+          display: inline-block;}
+
+ 
+        #credits{
+        position: relative;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 10px;
+        }
+       #credits a:link, a:visited {
+   
+ 
+          color: blue;
+          text-align: center; 
+          text-decoration: none;
+          display: inline-block;}
+      
+      .btn {
+        position: relative;
+        display: inline-block;
+        letter-spacing: 1.2px;
+        padding: 12px 32px;
+        text-align: center;
+        font-family: "Korean";
+        text-transform: uppercase;
+        overflow: hidden;
+        z-index: 1;
+        cursor: pointer;
+      }
+      .btn:focus {
+        outline: none;
+      }
+      
+      .btn--primary {
+        color: green;
+      }
+      
+      .btn--border {
+        border-width: 2px;
+        border-color: green;
+        border-style: solid;
+        border-radius: 10px;
+        box-sizing: border-box;
+      }
+      
+      .btn--animated {
+        -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+      }
+      
+      .btn--animated:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: green;
+        -webkit-transform: scaleX(0);
+                transform: scaleX(0);
+        -webkit-transform-origin: 0 50%;
+                transform-origin: 0 50%;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: -webkit-transform;
+        transition-property: transform;
+        transition-property: transform, -webkit-transform;
+        -webkit-transition-duration: 0.5s;
+                transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+                transition-timing-function: ease-out;
+        z-index: -1;
+      }
+      .btn--animated:hover {
+        color: white;
+        
+      }
+      .btn--animated:hover:before {
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+        -webkit-transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
+                transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
+      }
+      #startbutton, #creditsbutton {
+        width: 230px;
+      }
